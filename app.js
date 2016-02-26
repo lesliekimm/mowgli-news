@@ -10,7 +10,8 @@ angular.module('mowgliNews', [])
                 { title: 'post 5', upvotes: 4 }
             ];
 
-            $scope.addPost = function(){
+            $scope.addPost = function() {
+                if (!$scope.title || $scope.title === '') { return; }
                 $scope.posts.push({ title: 'A new post!', upvotes: 0 });
                 $scope.title = '';
             };
