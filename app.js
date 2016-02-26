@@ -12,6 +12,7 @@ angular.module('mowgliNews', [])
 
             $scope.addPost = function(){
                 $scope.posts.push({ title: 'A new post!', upvotes: 0 });
+                $scope.title = '';
             };
         }
     ]
