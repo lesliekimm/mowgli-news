@@ -23,7 +23,13 @@ angular.module('mowgliNews', [])
 
             $scope.incrementUpvotes = function(post) {
                 post.upvotes += 1;
-            }
+            };
+
+            $scope.decrementUpvotes = function(post) {
+                if (post.upvotes > 0) {
+                    post.upvotes -= 1;
+                }
+            };
         }
     ]
 );
