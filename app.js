@@ -15,6 +15,10 @@ angular.module('mowgliNews', [])
                 $scope.posts.push({ title: 'A new post!', upvotes: 0 });
                 $scope.title = '';
             };
+
+            $scope.incrementUpvotes = function(post) {
+                post.upvotes += 1;
+            }
         }
     ]
 );
