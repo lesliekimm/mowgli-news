@@ -7,14 +7,9 @@ angular.module('mowgliNews')
 
         $scope.addPost = function() {
             if (!$scope.title || $scope.title === '') { return; }
-            $scope.posts.push({
+            posts.create({
                 title: $scope.title,
-                link: $scope.link,
-                upvotes: 0,
-                comments: [
-                    { author: 'Mowgli', body: 'give me cookie!', upvotes: 0 },
-                    { author: 'Thumper', body: 'me too!!!', upvotes: 0 }
-                ]
+                link: $scope.link
             });
             $scope.title = '';
             $scope.link = '';
