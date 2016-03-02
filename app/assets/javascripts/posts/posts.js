@@ -18,5 +18,11 @@ angular.module('mowgliNews')
         });
     };
 
+    o.get = function(id) {
+        return $http.get('/posts/' + id + '.json').then(function(res) {
+            return res.data;
+        });
+    };
+
     return o;
 }]);
