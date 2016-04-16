@@ -1,3 +1,0 @@
-#mowgli news
-
-<h2>angularjs and rails Flapper News thinkster Tutorial</h2>
